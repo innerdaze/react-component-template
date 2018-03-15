@@ -28,7 +28,7 @@ yarn publish
 
 ## Other Tools
 
-* Eslint
+* ESLint
 
 ## License
 
