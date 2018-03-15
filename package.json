@@ -9,7 +9,8 @@
     "prebuild": "shx mkdir -p dist",
     "build": "npm run transpile -- -o dist/index.js",
     "start:dev": "babel-node src/index.js",
-    "watch": "nodemon -w src/* -x \"npm run build &> /dev/null && node .\""
+    "watch": "nodemon -w src/* -x \"npm run build &> /dev/null && node .\"",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
