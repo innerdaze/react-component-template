@@ -29,3 +29,7 @@ yarn publish
 ## Other Tools
 
 * Eslint
+
+## License
+
+MIT
