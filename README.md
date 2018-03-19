@@ -1,4 +1,4 @@
-# ES7 Project Template
+# React Standalone Component Template
 
 ## Usage
 
