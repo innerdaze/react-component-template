@@ -1,5 +1,5 @@
 {
-  "name": "react-component-template",
+  "name": "react-standalone-component-template",
   "author": "Lee Driscoll <lsdriscoll@icloud.com>",
   "version": "0.0.1",
   "description": "",
@@ -17,14 +17,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/innerdaze/react-component-template.git"
+    "url":
+      "git+https://github.com/innerdaze/react-standalone-component-template.git"
   },
   "keywords": [],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/innerdaze/react-componenent-template/issues"
+    "url":
+      "https://github.com/innerdaze/react-standalone-componenent-template/issues"
   },
-  "homepage": "https://github.com/innerdaze/react-component-template#readme",
+  "homepage":
+    "https://github.com/innerdaze/react-standalone-component-template#readme",
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.42",
     "@babel/core": "^7.0.0-beta.42",
