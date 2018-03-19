@@ -1,35 +1,59 @@
 {
-  "name": "es7-project-template",
-  "version": "1.0.0",
+  "name": "react-component-template",
+  "author": "Lee Driscoll <lsdriscoll@icloud.com>",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/web/main.bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "transpile": "babel src/index.js",
-    "prebuild": "shx mkdir -p dist",
-    "build": "npm run transpile -- -o dist/index.js",
-    "start:dev": "babel-node src/index.js",
-    "watch": "nodemon -w src/* -x \"npm run build &> /dev/null && node .\"",
-    "prepublish": "npm run build"
+    "compile:dev": "webpack --mode development",
+    "compile:prod": "webpack --mode production",
+    "build": "npm run compile:dev",
+    "start:dev": "babel-node src/index.jsx",
+    "watch": "webpack-dev-server --open",
+    "prepublish": "npm run build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/innerdaze/es7-project-template.git"
+    "url": "git+https://github.com/innerdaze/react-component-template.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/innerdaze/es7-project-template/issues"
+    "url": "https://github.com/innerdaze/react-componenent-template/issues"
   },
-  "homepage": "https://github.com/innerdaze/es7-project-template#readme",
+  "homepage": "https://github.com/innerdaze/react-component-template#readme",
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.41",
-    "@babel/core": "^7.0.0-beta.41",
-    "@babel/preset-env": "^7.0.0-beta.41",
-    "@babel/preset-stage-0": "^7.0.0-beta.41",
+    "@babel/cli": "^7.0.0-beta.42",
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "@babel/preset-react": "^7.0.0-beta.42",
+    "@babel/preset-stage-0": "^7.0.0-beta.42",
+    "@storybook/cli": "^3.3.15",
+    "@storybook/react": "^3.3.15",
+    "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^8.2.2",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^0.28.11",
     "eslint": "^4.18.2",
-    "shx": "^0.2.2"
+    "eslint-plugin-react": "^7.7.0",
+    "file-loader": "^1.1.11",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-hot-loader": "^4.0.0",
+    "shx": "^0.2.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "peerDependencies": {
+    "react": "^16.2.0"
+  },
+  "eslint": {
+    "extends": ["react-app"]
   }
 }

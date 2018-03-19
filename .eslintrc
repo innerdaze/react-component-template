@@ -17,6 +17,7 @@
     "semi": ["error", "never"],
     "strict": 0,
     "quotes": ["error", "single"],
+    "jsx-quotes": ["error", "prefer-single"],
     "no-unused-vars": 0,
     "camelcase": 0,
     "no-underscore-dangle": 0
